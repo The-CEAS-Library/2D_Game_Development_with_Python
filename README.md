@@ -2,7 +2,7 @@
 
 A 2D-game development workshop built on the fundamentals of the 'pygame' module in Python
 
-[](url=https://www.pygame.org/images/logo_lofi.png)
+![](url=https://www.pygame.org/images/logo_lofi.png)
 
 ### Introduction to 'pygame'
 
