@@ -51,7 +51,7 @@ class Level:
 				player.speed = 8
 
 
-        
+
 	def run(self):
 
 		# level tiles
