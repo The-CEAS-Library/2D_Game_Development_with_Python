@@ -1,42 +1,42 @@
 import pygame 
 
 class Player(pygame.sprite.Sprite):
-	def __init__(self,pos):
-		super().__init__()
-		
-		self.image = pygame.Surface((32,64))
-		self.image.fill('red)
-		self.rect = self.image.get_rect(topleft = pos)
+    def __init__(self,pos):
+        super().__init__()
 
-                # VECTORS
-                # arrows you can draw in a coordinate system
-                # eg vec(100,50)
+        self.image = pygame.Surface((32,64))
+        self.image.fill('red)
+        self.rect = self.image.get_rect(topleft = pos)
 
-                # this makes the movement smoother by looking at two diff
-                # variables at once
+        # VECTORS
+        # arrows you can draw in a coordinate system
+        # eg vec(100,50)
 
-                self.direction = pygame.math.Vector2(0,0)
-                self.speed = 8 # to increase the speed of the player
-	
+        # this makes the movement smoother by looking at two diff
+        # variables at once
 
-        def get_input(self):
-                
-                keys = pygame.key.get_pressed()
+        self.direction = pygame.math.Vector2(0,0)
+        self.speed = 8 # to increase the speed of the player
 
-                                if keys[pygame.K_RIGHT]:
-                                # we want the player to move right
-                                        self.direction = 1
 
-                                elif keys[pygame.K_LEFT]:
-                                        self.direction = -1
+    def get_input(self):
 
-                                else:
-                                        self.direction = 0
+        keys = pygame.key.get_pressed()
 
-        def update(self):
+        if keys[pygame.K_RIGHT]:
+        # we want the player to move right
+            self.direction = 1
 
-                self.get_input()
-                self.rect.x += self.direction.x * self.speed 
-                                
-                                
-                                
+        elif keys[pygame.K_LEFT]:
+            self.direction = -1
+
+        else:
+            self.direction = 0
+
+    def update(self):
+
+        self.get_input()
+        self.rect.x += self.direction.x * self.speed 
+
+
+
