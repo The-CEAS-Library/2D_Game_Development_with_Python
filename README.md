@@ -1,4 +1,4 @@
-# 2D-Game
+# 2D-Game Development with Python
 
 A 2D-game development workshop built on the fundamentals of the 'pygame' module in Python
 
