@@ -16,7 +16,7 @@ class Level:
 
         self.tiles = pygame.sprite.Group()
 
-        self.tiles = pygame.sprite.GroupSingle()
+        self.player = pygame.sprite.GroupSingle()
 
         for row_index, row in enumerate(layout):
             for col_index, cell in enumerate(row):
