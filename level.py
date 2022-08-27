@@ -46,15 +46,15 @@ class Level:
       direction_x = player.direction.x
 
         #left of the screen
-        if player_x < screen_width/4 and direction_x < 0:
+      if player_x < screen_width/4 and direction_x < 0:
                 self.world_shift = 8
                 player.speed = 0
                 
-        elif player_x > screen_width - (screen_width/4) and direction_x > 0:
+      elif player_x > screen_width - (screen_width/4) and direction_x > 0:
                 self.world_shift = -8
                 player.speed = 0
 
-        else: # to make the level scroll along with the player
+      else: # to make the level scroll along with the player
                 self.world_shift = 0
                 player.speed = 8
 
@@ -73,7 +73,3 @@ class Level:
         self.player.draw(self.display_surface)
 
         self.scroll_x
-
-
-
-                
