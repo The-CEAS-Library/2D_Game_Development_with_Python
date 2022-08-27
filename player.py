@@ -24,11 +24,13 @@ class Player(pygame.sprite.Sprite):
 
         if keys[pygame.K_RIGHT]:
         # we want the player to move right
-            self.direction = 1
-
+            self.direction.x = 1
+        
+        # we want the player to move left
         elif keys[pygame.K_LEFT]:
-            self.direction = -1
-
+            self.direction.x = -1
+        
+        # no movement at all
         else:
             self.direction = 0
 
