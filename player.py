@@ -11,10 +11,9 @@ class Player(pygame.sprite.Sprite):
         # VECTORS
         # arrows you can draw in a coordinate system
         # eg vec(100,50)
-
         # this makes the movement smoother by looking at two diff
         # variables at once
-
+                        
         self.direction = pygame.math.Vector2(0,0)
         self.speed = 8 # to increase the speed of the player
 
