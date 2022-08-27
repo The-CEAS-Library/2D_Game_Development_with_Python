@@ -34,9 +34,16 @@ class Level:
                     self.player.add(player_sprite)
 
     def scroll_x(self):
-        player = self.player.sprite
-        player_x = player.rect.centerx
-        direction_x = player.direction.x
+
+      # get player
+      player = self.player.sprite
+      
+      # getting the center of the x position, where the player is
+      # on the x coordinate
+      player_x = player.rect.centerx
+
+      # what direction the player is going to move in
+      direction_x = player.direction.x
 
         #left of the screen
         if player_x < screen_width/4 and direction_x < 0:
